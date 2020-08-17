@@ -1,0 +1,4 @@
+Client ID:
+###########
+Client secret:
+###########
