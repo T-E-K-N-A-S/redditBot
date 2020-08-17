@@ -167,6 +167,7 @@ def wc_corpus(tokens,rid):
 
     
 def read_imgur_cred():
+    # txt file for imgur cred
     f = open('imgur.txt','r')
     lines = f.readlines()
     imgurID = lines[1][:-1]
@@ -174,6 +175,7 @@ def read_imgur_cred():
     return imgurID,imgurSecret
 
 def read_reddit_cred():
+    # txt file of reddit creds
     f = open('reddit.txt','r')
     lines = f.readlines()
     redID = lines[1][:-1]
