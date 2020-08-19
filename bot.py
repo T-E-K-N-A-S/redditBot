@@ -18,29 +18,6 @@ import datetime
 # url = sys.argv[1]
 
 
-# subreddit = reddit.subreddit('me_irl')
-# bot_phrase = 'i am in boys'
-
-# submission = reddit.submission(url= url)
-# print(submission.title)
-# print(submission.title)  # Output: the submission's title
-# print(submission.score)  # Output: the submission's score
-# print(submission.id)     # Output: the submission's ID
-# print(submission.url)    # Output: the URL the submission points to
-# for top_level_comment in submission.comments:
-#     print(top_level_comment.body)
-
-# count = 0
-# submission.comments.replace_more(limit=None)
-# for comment in submission.comments.list():
-#     print(comment.body)
-#     count +=1 
-
-# print(count)
-
-# for message in reddit.inbox.messages(limit=5):
-#     print(message.subject)
-
 def find_root_submission(comment):
     ancestor = comment
     refresh_counter = 0
@@ -129,13 +106,7 @@ def word_cloud_this_post():
             mess += 1
     return clouds,mess
 
-                
-
-
-
-
-
-
+  
 
 def wc_corpus(tokens,rid):
     strtoken = ''
@@ -162,7 +133,6 @@ def wc_corpus(tokens,rid):
     # plt.imshow(wordcloud) 
     # plt.axis("off") 
     # plt.tight_layout(pad = 0) 
-
     # plt.show() 
 
     
